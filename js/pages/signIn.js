@@ -35,10 +35,10 @@ const checkUserPasswordInput = () => {
 
 const isFormValid = () => checkUserEmailInput() && checkUserPasswordInput()
 
-$signInForm.addEventListener('submit', function(e) {
+$signInForm.addEventListener('submit', function (e) {
     e.preventDefault()
 
     if (isFormValid()) {
-        window.location = 'http://127.0.0.1:5500/pages/homepage.html'
+        window.location = 'pages/homepage.html'
     }
 })
